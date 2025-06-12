@@ -329,7 +329,7 @@ build/pic32mx_eth_sk2/production/_ext/1434663852/sys_console_usb_cdc.o: \
  ../../../../../framework/tcpip/tftps.h \
  ../../../../../framework/driver/ethmac/drv_ethmac.h \
  ../../../../../framework/driver/miim/drv_miim.h ../src/app.h \
- ../src/appgen.h \
+ ../src/appgen.h ../src/DefMenuGen.h ../src/GesPec12.h \
  ../../../../../framework/system/console/src/sys_console_usb_cdc_local.h \
  ../../../../../framework/system/console/src/sys_console_local.h
 
@@ -994,6 +994,10 @@ build/pic32mx_eth_sk2/production/_ext/1434663852/sys_console_usb_cdc.o: \
 ../src/app.h:
 
 ../src/appgen.h:
+
+../src/DefMenuGen.h:
+
+../src/GesPec12.h:
 
 ../../../../../framework/system/console/src/sys_console_usb_cdc_local.h:
 

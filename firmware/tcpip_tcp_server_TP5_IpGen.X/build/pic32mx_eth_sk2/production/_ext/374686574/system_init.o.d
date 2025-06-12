@@ -331,7 +331,7 @@ build/pic32mx_eth_sk2/production/_ext/374686574/system_init.o: \
  ../../../../../framework/driver/ethmac/drv_ethmac.h \
  ../../../../../framework/driver/miim/drv_miim.h ../src/app.h \
  ../src/system_config/pic32mx_eth_sk2/system_definitions.h \
- ../src/appgen.h
+ ../src/appgen.h ../src/DefMenuGen.h ../src/GesPec12.h
 
 ../src/system_config/pic32mx_eth_sk2/system_config.h:
 
@@ -998,3 +998,7 @@ build/pic32mx_eth_sk2/production/_ext/374686574/system_init.o: \
 ../src/system_config/pic32mx_eth_sk2/system_definitions.h:
 
 ../src/appgen.h:
+
+../src/DefMenuGen.h:
+
+../src/GesPec12.h:
