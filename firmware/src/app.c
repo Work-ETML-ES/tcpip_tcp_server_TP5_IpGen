@@ -206,7 +206,7 @@ void APP_Tasks(void) {
                     SYS_CONSOLE_MESSAGE(" IP Address: ");
                     SYS_CONSOLE_PRINT("%d.%d.%d.%d \r\n", ipAddr.v[0], ipAddr.v[1], ipAddr.v[2], ipAddr.v[3]);
 
-                        APPGEN_SetIP(ipAddr.v[0], ipAddr.v[1], ipAddr.v[2], ipAddr.v[3]);
+                    APPGEN_SetIP(ipAddr.v[0], ipAddr.v[1], ipAddr.v[2], ipAddr.v[3]);
                 }
                 appData.state = APP_TCPIP_OPENING_SERVER;
             }
@@ -273,29 +273,29 @@ void APP_Tasks(void) {
                     wCurrentChunk = wMaxGet - w;
 
                 // Transfer the data out of the TCP RX FIFO and into our local processing buffer.
-                TCPIP_TCP_ArrayGet(appData.socket, AppBuffer, wCurrentChunk);
+                wCurrentChunk = TCPIP_TCP_ArrayGet(appData.socket, AppBuffer, wCurrentChunk);
                 GetMessage((int8_t*) AppBuffer, &RemoteParamGen, &SaveTodo);
 
-                // Perform the "ToUpper" operation on each data byte
-                for (w2 = 0; w2 < wCurrentChunk; w2++) {
-                    i = AppBuffer[w2];
-                    if (i >= 'a' && i <= 'z') {
-                        i -= ('a' - 'A');
-                        AppBuffer[w2] = i;
-                    } else if (i == '\e') //escape
-                    {
-                        appRJ45Stat.rj45Stat = false;
-                        appData.state = APP_TCPIP_CLOSING_CONNECTION;
-                        SYS_CONSOLE_MESSAGE("Connection was closed\r\n");
-                    }
-                }
+                //                // Perform the "ToUpper" operation on each data byte
+                //                for (w2 = 0; w2 < wCurrentChunk; w2++) {
+                //                    i = AppBuffer[w2];
+                //                    if (i >= 'a' && i <= 'z') {
+                //                        i -= ('a' - 'A');
+                //                        AppBuffer[w2] = i;
+                //                    } else if (i == '\e') //escape
+                //                    {
+                //                        appRJ45Stat.rj45Stat = false;
+                //                        appData.state = APP_TCPIP_CLOSING_CONNECTION;
+                //                        SYS_CONSOLE_MESSAGE("Connection was closed\r\n");
+                //                    }
+                //                }
 
-                if ((AppBuffer[0] == '!') && (AppBuffer[1] == 'S')) {
+                if (AppBuffer[0] == '!' && strchr((char*) AppBuffer, '#') != NULL) {
                     SendMessage((int8_t*) AppBuffer, &RemoteParamGen, SaveTodo);
-                    wCurrentChunk = 31;
                 } else {
-                    sprintf((char*) AppBuffer, "la trame envoyee est fausse\n\r");
-                    wCurrentChunk = 31;
+                    const char* msg = "mauvaise trame envoyé";
+                    strcpy((char*) AppBuffer, msg);
+                    wCurrentChunk = strlen(msg); // longueur de la chaîne à envoyer
                 }
 
                 // Transfer the data out of our local processing buffer and into the TCP TX FIFO.

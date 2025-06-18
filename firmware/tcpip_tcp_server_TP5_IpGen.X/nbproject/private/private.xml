@@ -4,18 +4,14 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/app.c</file>
-            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/appgen.c</file>
-            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/appgen.h</file>
-            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/MenuGen.h</file>
-            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/MenuGen.c</file>
-            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/tcpip_tcp_server_TP5_IpGen.X/nbproject/Makefile-impl.mk</file>
-            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/tcpip_tcp_server_TP5_IpGen.X/nbproject/Makefile-pic32mx_eth_sk2.mk</file>
-            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/system_config/pic32mx_eth_sk2/system_interrupt.c</file>
-            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/Mc32NVMUtil.c</file>
-            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/system_config/pic32mx_eth_sk2/framework/driver/drv_tmr_static.h</file>
-            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/system_config/pic32mx_eth_sk2/system_tasks.c</file>
-            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/main.c</file>
             <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/Mc32gest_SerComm.c</file>
+            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/appgen.c</file>
+            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/MenuGen.c</file>
+            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/app.h</file>
+            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/appgen.h</file>
+            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/system_config/pic32mx_eth_sk2/system_interrupt.c</file>
+            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/src/main.c</file>
+            <file>file:/C:/microchip/harmony/v2_06/apps/tcpip/tcpip_tcp_server_TP5_IpGen/firmware/tcpip_tcp_server_TP5_IpGen.X/nbproject/Makefile-pic32mx_eth_sk2.mk</file>
         </group>
     </open-files>
 </project-private>
